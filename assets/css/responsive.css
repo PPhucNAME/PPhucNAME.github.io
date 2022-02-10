@@ -18,6 +18,9 @@
         top: 0;
         z-index: 10;
     }
+    .header__btn-category {
+        display: block;
+    }
     .header__cart-list {
         position: fixed;
         top: var(--header-height);
