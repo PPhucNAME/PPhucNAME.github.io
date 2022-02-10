@@ -8,6 +8,7 @@
     --navbar-height: 34px;
     --header-height: 120px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px
 }
 
 * {
@@ -21,16 +22,6 @@ html {
     box-sizing: border-box;
 }
 /* Responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
 .grid__row {
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +205,7 @@ html {
 
 .pagination-item {
     list-style: none;
-    margin-left: 32px;
+    flex: 1;
 }
 
 .pagination-item__link {
@@ -235,6 +226,6 @@ html {
     border: 1px solid #f1f1f1;
 }
 
-.pagination-item__icon {
-
+.item-active {
+    color: var(--primary-color)!important;
 }
